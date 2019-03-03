@@ -1,5 +1,5 @@
 const Commando = require('discord.js-commando');
-const client = new Commando.Client();
+const bot = new Commando.Client();
 
 client.on('ready', () => {
     console.log('Ready for usage');
