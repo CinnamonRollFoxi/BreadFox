@@ -13,7 +13,7 @@ client.on('message', message => {
     }
 });
 
-bot.on("message", async message => {
+client.on("message", async message => {
     
     if(message.auther.bot) return;
     if(message.channel.type === "dm") return;
