@@ -13,6 +13,18 @@ client.on('message', message => {
     }
 });
 
+bot.on("message", async message => {
+    
+    if(message.auther.bot) return;
+    if(message.channel.type === "dm") return;
+    
+    let prefix = botconfig.prefix;
+    let messageArray = message.content.split(" ");
+    let cmd = messageArray[0];
+    let args = messageArray.slice(1);
+    
+ //Report Command
+
 if(cmd === `${prefix}report`){
    
  //~report @user reason
