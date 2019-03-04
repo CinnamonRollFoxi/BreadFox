@@ -13,7 +13,7 @@ client.on('message', message => {
     }
 });
 
-if(cmd === `{prefix}report`){
+if(cmd === `${prefix}report`){
    
  //~report @user reason
     
@@ -29,7 +29,7 @@ if(cmd === `{prefix}report`){
     message.channel.send(reportEmbed);
     
     return;
-}
+};
 
 
 
