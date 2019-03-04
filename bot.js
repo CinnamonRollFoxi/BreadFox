@@ -42,6 +42,8 @@ if(cmd === `${prefix}report`){
     
     return;
 };
+    
+)};
 
 
 
