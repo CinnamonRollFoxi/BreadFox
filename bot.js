@@ -1,6 +1,13 @@
 const Commando = require('discord.js-commando');
-const client = new Commando.Client();
-const botconfig = require("./botconfig.json");
+const prefix = "a+";
+const client = new Commando.Client({
+    commandPrefix: prefix
+});
+
+//CommandFiles
+
+client.registry.registerGroup('simple', 'Simple');
+client.registry.registerCommandsIn(__dirname + '/commands');
 
 
 client.on('ready', () => {
